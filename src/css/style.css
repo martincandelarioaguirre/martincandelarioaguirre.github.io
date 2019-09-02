@@ -122,3 +122,14 @@ a {
     color: #FFF;
     font-weight: bold;
 }
+
+
+.title-section {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.subtitle-section {
+    text-align: left;
+    padding-left: 20px;
+}
