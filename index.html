@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="app">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,47 @@
     <title>Software Engineer Martin</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
     <script src="./src/scripts/app.js"></script>
-    <link href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
     <!-- <script src="./src/scripts/about/about.module.js"></script>
     <script src="./src/scripts/about/about.component.js"></script> -->
 </head>
+
 <body ng-controller="appController">
-    <header></header>
-    <main></main>
+    <header class="main-header">
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item">
+                    <a href="#about">About</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#work">Work</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#skills">Skills</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about section-g">
+            <img src="./src/img/profile_pic.jpg" alt="me" class="profile_pic">
+            <h1>I am Martin, Welcome to my profile website!</h1>
+        </section>
+        <section class="work section-g">
+            <h3>work section</h3>
+        </section>
+        <section class="skills section-g">
+            <h3>skills section</h3>
+        </section>
+        <section class="contact section-g">
+            <h3>contact section</h3>
+        </section>
+    </main>
     <footer></footer>
-   <h1>{{hello}}</h1>
+    <!-- <h1>{{hello}}</h1> -->
 </body>
+
 </html>
