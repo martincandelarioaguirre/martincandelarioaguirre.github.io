@@ -8,16 +8,41 @@ body {
     background-color: aliceblue;
 }
 
+fieldset {
+    border: 0;
+}
+
+legend {
+    margin: 0; 
+    text-align: left;
+    border-style: none;
+    border-width: 0;
+    margin-bottom: 0;
+    padding: .1rem 1rem;
+    border: 1px solid black;
+    background: rgba(242,246,248,1);
+}
+
 .main-header {
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0rem;
     z-index: 1;
     background-color: #005b96;
-    /* border-bottom-color: black;
-    border-bottom: 10px; */
+    border-bottom-color: black;
+    border-bottom: 10px;
+}
+
+.main-header:after {
+    content:"";
+    background: -webkit-linear-gradient(left, rgba(92, 7, 52, 1) 0%, rgba(134, 29, 84, 1) 12%, rgba(255, 93, 177, 1) 47%, rgba(83, 0, 30, 1) 100%);
+    display: block;
+    height:5px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 .main-nav {
@@ -54,7 +79,7 @@ body {
 .section-g {
     background-color: #adcbe3;
     text-align: center;
-    padding: 1rem;
+    /* padding: 1rem; */
     margin-top: 2.5rem;
     box-shadow:  1rem .1rem 1rem .1rem rgba(0, 0, 0, .5);
     width: 90%;
@@ -62,6 +87,7 @@ body {
     margin-right: 5%;
     margin-left: 5%;
     line-height: 1.5;
+    border: 1px solid black;
 }
 
 p {
@@ -96,10 +122,6 @@ p {
     margin-top: 15vh;
 }
 
-.work {
-
-}
-
 .skills{
 
 }
@@ -111,10 +133,22 @@ p {
 footer {
     width: 100%;
     background-color: #03396c;
-    padding: 30px;
     margin-top: 2rem;
+
     color: #FFF;
     text-align: center;
+    height: 100px;
+    padding-bottom: 3rem;
+}
+
+footer:before {
+    content: "";
+    background: -webkit-linear-gradient(left, rgba(92, 7, 52, 1) 0%, rgba(134, 29, 84, 1) 12%, rgba(255, 93, 177, 1) 47%, rgba(83, 0, 30, 1) 100%);
+    display: block;
+    height:5px;
+    width: 100%;
+    position: absolute;
+    border: 10px;
 }
 
 a {
@@ -124,12 +158,20 @@ a {
 }
 
 
+.work {
+  
+}
+
 .title-section {
-    text-align: left;
+    text-align: left !important;
     padding-left: 20px;
+    margin: 0;
+    text-shadow: 2px 2px 2px grey;
 }
 
 .subtitle-section {
     text-align: left;
     padding-left: 20px;
+    margin: 0;
 }
+
