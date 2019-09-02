@@ -61,9 +61,10 @@ body {
     text-align: center;
     margin-right: 5%;
     margin-left: 5%;
+    line-height: 1.5;
 }
 
-.section-g p {
+p {
     color: #005b96;
     font-weight: bold;
 }
