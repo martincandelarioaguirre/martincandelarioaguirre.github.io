@@ -50,22 +50,17 @@ body {
     color: #ccc;
 }
 
-main {
-    margin-top: 3.5rem;
-    display: inline-block;
-    width: 90%;
-    text-align: center;
-    margin-right: 5%;
-    margin-left: 5%;
-}
 
 .section-g {
     background-color: #adcbe3;
     text-align: center;
     padding: 1rem;
     margin-top: 2.5rem;
-    width: auto;
     box-shadow:  1rem .1rem 1rem .1rem rgba(0, 0, 0, .5);
+    width: 90%;
+    text-align: center;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .section-g p {
@@ -73,9 +68,22 @@ main {
     font-weight: bold;
 }
 
+.profile-section {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+}
+
+.profile-description {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    margin: auto;
+}
+
 .profile_pic {
     border-radius: 50%;
-    width: 40%;
+    width: 55%;
     height: auto;
     border: 2px solid;
     box-shadow: 0rem 1rem 1rem .5rem rgba(0, 0, 0, .5);
@@ -84,6 +92,7 @@ main {
 
 .about {
     padding-top: 5vh;
+    margin-top: 15vh;
 }
 
 .work {
