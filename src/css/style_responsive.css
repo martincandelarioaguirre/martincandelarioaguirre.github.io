@@ -1,0 +1,34 @@
+@media(max-width: 600px){
+
+    main {
+        padding-top: 200px;
+    }
+
+    .column-profile {
+        width: 100%;
+    }
+
+    .column-profile-details {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .row {
+        width: 100%;
+        display: block;
+    }
+
+}
+
+@media(max-width: 880px){
+    main {
+        padding-top: 150px;
+    }
+
+    /* Create column to show jobs description */
+    .column-job {
+        width: 99%;
+	    height: 300px; /* Should be removed. Only for demonstration */
+        margin-top: 10px;
+    }
+}

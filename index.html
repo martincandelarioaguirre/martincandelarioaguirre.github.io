@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
     <script src="./src/scripts/app.js"></script>
     <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/style_responsive.css" />
 </head>
 
 <body ng-controller="appController">
@@ -46,9 +47,9 @@
     <main>
         <section class="row">
             <div class="column-profile">
-                <h3 class="header-title">
-                    PROFESSIONAL DETAILS
-                </h3>
+                <div class="header-title-box">
+                    <h3 class="header-title">PROFESSIONAL DETAILS</h3>
+                </div>
                 <div class="profile-section">
                     <img src="./src/img/profile_pic.jpg" alt="me" class="profile_pic">
                     <div class="details-section">
@@ -77,7 +78,15 @@
                     </div>
                 </div>
             </div>
-            <div class="column-profile-details">Summary</div>
+            <div class="column-profile-details">
+                <div class="header-title-box"> 
+                    <h3 class="titles-box">ABOUT ME</h3>
+                </div>
+                <div>
+                    SECTION Of PERSONAL DETAILS
+                </div>
+                <div></div>
+            </div>
         </section>
         <article class="row" ng-repeat="job in jobs">
             <div class="column-job">
