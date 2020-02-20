@@ -3,10 +3,152 @@
 }
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Style the header element */
+header {
+	background-color: #f1f1f1;
+    text-align: center;
+    font-size: 15px;
+    position: fixed;
+    width: 100%;
+}
+
+.main-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    /*padding: 0.5rem 0rem;*/
+    z-index: 1;
+    /*background-color: #005b96;*/
+    border-bottom-color: black;
+    border-bottom: 10px;
+}
+
+.main-nav {
+    display: inline-block;
+    /*text-align: center;*/
+    width:100%;
+}
+
+.main-nav__items {
+    margin: 0;
+    /*margin: 1%;*/
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav__item {
+    display: inline-block;
+    margin: 0 0rem;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.main-nav__item a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 0.2rem 0;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+    color: #FFF;
+}
+
+.main-nav__item:hover,
+.main-nav__item:active {
+    background-color:  #0086ad;
+}
+
+main {
+    width: 100%;
+    padding-top: 80px;
+}
+
+
+/* Create two columns that floats next to each other */
+.column-profile {
+	float: left;
+    width: 34%;
+	padding: 10px;
+	height: 300px; /* Should be removed. Only for demonstration */
+    margin-right: 1px;
+}
+
+.column-profile-details {
+	float: left;
+    width: 65%;
+	padding: 10px;
+	height: 300px; /* Should be removed. Only for demonstration */
+    margin-left: 1px;
+}
+
+/* Create column to show jobs description */
+.column-job {
+	float: left;
+    width: 99%;
+	padding: 10px;
+	height: 300px; /* Should be removed. Only for demonstration */
+    margin-right: 1px;
+    background-color:#aaa;
+    margin-top: 1%;
+}
+
+.row {
+    width: 100%;
+    padding:0 1% 0 1%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+.icons{
+  width: 25px;
+  height: 25px;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** {
+    box-sizing: border-box;
+}
+
+body {
     font-family: "Monserrat", sans-serif;
     margin: 0;
     background-color: aliceblue;
 }
+
 
 fieldset {
     border: 0;
@@ -79,7 +221,6 @@ legend {
 .section-g {
     background-color: #adcbe3;
     text-align: center;
-    /* padding: 1rem; */
     margin-top: 2.5rem;
     box-shadow:  1rem .1rem 1rem .1rem rgba(0, 0, 0, .5);
     width: 90%;
@@ -174,4 +315,4 @@ a {
     padding-left: 20px;
     margin: 0;
 }
-
+*/

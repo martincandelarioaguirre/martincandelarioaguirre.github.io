@@ -9,11 +9,58 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
     <script src="./src/scripts/app.js"></script>
     <link rel="stylesheet" href="./src/css/style.css" />
-    <!-- <script src="./src/scripts/about/about.module.js"></script>
-    <script src="./src/scripts/about/about.component.js"></script> -->
 </head>
 
 <body ng-controller="appController">
+    
+    <header class="main-header">
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item">
+                    <img src="./src/img/icon_aboutme.png" class="icons">
+                    <a href="#">ABOUT ME </a>
+                </li>
+                <li class="main-nav__item">
+                    <img src="./src/img/icon_cv.png" class="icons">
+                    <a href="#">RESUMEN</a>
+                </li>
+                <li class="main-nav__item">
+                    <img src="./src/img/icon_projects.png" class="icons">
+                    <a href="#">PORTFOLIO</a>
+                </li>
+                <li class="main-nav__item">
+                    <img src="./src/img/icon_skills.png" class="icons">
+                    <a href="#">SKILL SETS</a>
+                </li>
+                <li class="main-nav__item">
+                    <img src="./src/img/icon_school.png" class="icons">
+                    <a href="#">STUDIES</a>
+                </li>
+                <li class="main-nav__item">
+                    <img src="./src/img/icon_contactme.png" class="icons">
+                    <a href="#">CONTACT ME</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="row">
+            <div class="column-profile" style="background-color:#aaa;">Profile information</div>
+            <div class="column-profile-details" style="background-color:#bbb;">Summary</div>
+        </section>
+        <article class="row" ng-repeat="job in jobs">
+            <div class="column-job">
+                {{job.CompanyName}}
+                {{job.CompanyLocation}}
+                {{job.PeriodOfTime}}
+                {{job.Profile}}
+                {{job.Description}}
+                {{job.Tools}}
+            </div>
+        </article>
+    </main>
+<!--
+
     <header class="main-header">
         <nav class="main-nav">
             <ul class="main-nav__items">
@@ -84,8 +131,13 @@
         <p>
             <a href="">m.c.a._92@hotmail.com</a>
         </p>
-    </footer>
+    </footer>-->
     <!-- <h1>{{hello}}</h1> -->
-</body>
 
+
+
+
+
+
+</body>
 </html>
