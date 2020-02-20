@@ -45,8 +45,39 @@
     </header>
     <main>
         <section class="row">
-            <div class="column-profile" style="background-color:#aaa;">Profile information</div>
-            <div class="column-profile-details" style="background-color:#bbb;">Summary</div>
+            <div class="column-profile">
+                <h3 class="header-title">
+                    PROFESSIONAL DETAILS
+                </h3>
+                <div class="profile-section">
+                    <img src="./src/img/profile_pic.jpg" alt="me" class="profile_pic">
+                    <div class="details-section">
+                        <p class="title">Name:</p>
+                        <p class="detail">{{personalInformation.Name}}</p>
+                    </div>
+                    <div class="details-section">
+                        <p class="title">Age:</p>
+                        <p class="detail">{{calculateAge(personalInformation.Age)}} Years</p>
+                    </div>
+                    <div class="details-section">
+                        <p class="title">Date of Birth:</p>
+                        <p class="detail">{{personalInformation.BirthDay | date:'MM/dd/yyyy '}}</p>
+                    </div>
+                    <div class="details-section">
+                        <p class="title">Location:</p>
+                        <p class="detail">{{personalInformation.Location}}</p>
+                    </div>
+                    <div class="details-section">
+                        <p class="title">Experience:</p>
+                        <p class="detail">{{calculateExperience(personalInformation.YearsOfExperience)}}</p>
+                    </div>
+                    <div class="details-section">
+                        <p class="title">Degree:</p>
+                        <p class="detail">{{personalInformation.Degree}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column-profile-details">Summary</div>
         </section>
         <article class="row" ng-repeat="job in jobs">
             <div class="column-job">
