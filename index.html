@@ -82,10 +82,78 @@
                 <div class="header-title-box"> 
                     <h3 class="titles-box">ABOUT ME</h3>
                 </div>
-                <div>
-                    SECTION Of PERSONAL DETAILS
+                <div class="profile-section">
+                    <div class="row">
+                        <div class="row-section-title">
+                            <p class="title">Name:</p>
+                        </div>
+                        <div class="row-section-value">
+                            <p class="detail">{{personalInformation.Name}}</p>
+                        </div>
+                        <div class="row-section-title">
+                            <p class="title">Age:</p>
+                        </div>
+                        <div class="row-section-value">
+                            <p class="detail">{{calculateAge(personalInformation.Age)}} Years</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row-section-title">
+                            <p class="title">Location:</p>
+                        </div>
+                        <div class="row-section-value">
+                            <p class="detail">{{personalInformation.Location}}</p>
+                        </div>
+                        <div class="row-section-title">
+                            <p class="title">Experience:</p>
+                        </div>
+                        <div class="row-section-value">
+                            <p class="detail">{{calculateExperience(personalInformation.YearsOfExperience)}}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row-section-title">
+                            <p class="title">Degree:</p>
+                        </div>
+                        <div class="row-section-value">
+                            <p class="detail">{{personalInformation.Degree}}</p>
+                        </div>
+                        <div class="row-section-title">
+                            <p class="title">Career Level:</p>
+                        </div>
+                        <div class="row-section-value">
+                            <p class="detail">{{personalInformation.CareerLevel}}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row-section-title">
+                            <p class="title">Phone:</p>
+                        </div>
+                        <div class="row-section-value">
+                            <p class="detail">{{personalInformation.Phone}}</p>
+                        </div>
+                        <div class="row-section-title">
+                            <p class="title">Email:</p>
+                        </div>
+                        <div class="row-section-value">
+                            <p class="detail">{{personalInformation.Email}}</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row-section-title">
+                            <p class="title">Passport:</p>
+                        </div>
+                        <div class="row-section-value">
+                            <p class="detail">{{personalInformation.Passport}}</p>
+                        </div>
+                    </div>
+                    <div class="line">
+                    </div>
+                    <div class="header-title-box-resume"> 
+                        <h3 class="titles-box">I'M SOFTWARE ENGINEER</h3>
+                        <p class="description">{{personalInformation.Resume}}</p>
+                    </div>
                 </div>
-                <div></div>
             </div>
         </section>
         <article class="row" ng-repeat="job in jobs">
@@ -99,81 +167,6 @@
             </div>
         </article>
     </main>
-<!--
-
-    <header class="main-header">
-        <nav class="main-nav">
-            <ul class="main-nav__items">
-                <li class="main-nav__item">
-                    <a href="#about">About</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="#work">Work</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="#skills">Skills</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="about" class="about section-g">
-            <div class="profile-section">
-                <img src="./src/img/profile_pic.jpg" alt="me" class="profile_pic">
-                <h1>This is Martin, Welcome!</h1>
-                <p>I am a software developer</p>
-            </div>
-            <div class="profile-description">
-                <h1>Summary</h1>
-                <p>
-                    I have been developer for five years, I have been involved in a variaty of projects
-                    with dotnet technology mainly with ASP.Net MVC, DotNet Core, WCF, WEB Api, WPF, Entity Framework
-                    with C# language.
-                </p>
-                <p>
-                    I also have hands-on experience with javascript based frameworks like AngularJS, Angular and Reactjs
-                    frameworks.
-                </p>
-                <p>
-                    I am always able to learn something new that brings me a new challenge to accomplish.
-                </p>
-                <p>
-                    As Software developer I like to keep me up to date with latest technology and improve it
-                    at work.
-                </p>
-            </div>
-        </section>
-        <fieldset id="work" class="work section-g">
-            <legend>
-                <h1 class="title-section">Work...</h1>
-            </legend>
-            <h3 class="subtitle-section">Subtitle work section</h3>
-        </fieldset>
-        <fieldset id="skills" class="skills section-g">
-            <legend>
-                <h1 class="title-section">Skills...</h1>
-            </legend>
-            <h3 class="subtitle-section">Subtitle skills section</h3>
-        </fieldset>
-        <fieldset id="contact" class="contact section-g">
-            <legend>
-                <h1 class="title-section">Contact...</h1>
-            </legend>
-            <h3 class="subtitle-section">Subtitle contact section</h3>
-        </fieldset>
-    </main>
-    <footer>
-        <br><br>
-        Send email to talk about coding, or even better, work along side hand by hand
-        <p>
-            <a href="">m.c.a._92@hotmail.com</a>
-        </p>
-    </footer>-->
-    <!-- <h1>{{hello}}</h1> -->
-
 
 
 

@@ -18,6 +18,16 @@
         display: block;
     }
 
+    .row-section-title {
+        width: 30%;
+        font-weight: bold;
+    }
+
+    .row-section-value {
+        width: 60%;
+        text-overflow: ellipsis;
+    }
+
 }
 
 @media(max-width: 880px){
