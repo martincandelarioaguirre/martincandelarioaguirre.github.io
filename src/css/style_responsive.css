@@ -28,6 +28,16 @@
         text-overflow: ellipsis;
     }
 
+    .row-profile .row-section-title {
+        width: 30%;
+        margin: 0 0 0 10px;
+    }
+
+    .row-profile .row-section-value {
+        width: 60%;
+        margin: 0 0 0 10px;
+    }
+
 }
 
 @media(max-width: 880px){

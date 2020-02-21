@@ -18,14 +18,15 @@ app.controller("appController", ['$scope',
             Phone: "### ### ####",
             Email: "m.c.a._92@hotmail.com",
             Passport: "Yes",
-            Resume: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it      look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident,      sometimes on purpose (injected humour and the like)."
+            Resume: "Hello, "
+            //Resume: "I am a highly competent mobile application software developer with eight years’ experience developing a wide range of tools for both iOS and Android for a range of clients. I have proven expertise in building sports betting and gambling apps. I understand the mobile app project     lifecycle in depth and am very capable at all aspects of development from project planning to requirements gathering through to writing and testing code, creating documentation and support. I am currently seeking long-term contract positions which will allow me to further improve my     project management skills."
         }
 
         $scope.jobs = [
             {
                 CompanyName: "UST-GLOBAL",
                 CompanyLocation: "CompanyLocation",
-                PeriodOfTime: "PeriodOfTime",
+                PeriodOfTime: "October, 2019 -- Current",
                 Profile: "Profile of the position",
                 Description: "Description of the job",
                 Tools: "Tools used by project"
@@ -33,7 +34,7 @@ app.controller("appController", ['$scope',
             {
                 CompanyName: "Tiempo Development",
                 CompanyLocation: "CompanyLocation",
-                PeriodOfTime: "PeriodOfTime",
+                PeriodOfTime: "March, 2018 -- October, 2019",
                 Profile: "Profile of the position",
                 Description: "Description of the job",
                 Tools: "Tools used by project"
@@ -41,7 +42,7 @@ app.controller("appController", ['$scope',
             {
                 CompanyName: "Softtek",
                 CompanyLocation: "CompanyLocation",
-                PeriodOfTime: "PeriodOfTime",
+                PeriodOfTime: "July, 2017 -- March, 2018",
                 Profile: "Profile of the position",
                 Description: "Description of the job",
                 Tools: "Tools used by project"
@@ -49,7 +50,7 @@ app.controller("appController", ['$scope',
             {
                 CompanyName: "Al Maximo TI",
                 CompanyLocation: "CompanyLocation",
-                PeriodOfTime: "PeriodOfTime",
+                PeriodOfTime: "January, 2017 -- July, 2017",
                 Profile: "Profile of the position",
                 Description: "Description of the job",
                 Tools: "Tools used by project"
@@ -57,7 +58,7 @@ app.controller("appController", ['$scope',
             {
                 CompanyName: "Mach Tecnologia",
                 CompanyLocation: "CompanyLocation",
-                PeriodOfTime: "PeriodOfTime",
+                PeriodOfTime: "July, 2016 -- December, 2016",
                 Profile: "Profile of the position",
                 Description: "Description of the job",
                 Tools: "Tools used by project"
@@ -65,7 +66,7 @@ app.controller("appController", ['$scope',
             {
                 CompanyName: "Intekel Automatizacion",
                 CompanyLocation: "CompanyLocation",
-                PeriodOfTime: "PeriodOfTime",
+                PeriodOfTime: "August, 2015 -- July, 2016",
                 Profile: "Profile of the position",
                 Description: "Description of the job",
                 Tools: "Tools used by project"
@@ -73,7 +74,7 @@ app.controller("appController", ['$scope',
             {
                 CompanyName: "Etileno XXI",
                 CompanyLocation: "CompanyLocation",
-                PeriodOfTime: "PeriodOfTime",
+                PeriodOfTime: "June, 2014 -- August, 2015",
                 Profile: "Profile of the position",
                 Description: "Description of the job",
                 Tools: "Tools used by project"
