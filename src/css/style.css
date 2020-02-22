@@ -32,7 +32,6 @@ header {
 
 .main-nav {
     display: inline-block;
-    /*text-align: center;*/
     width:100%;
 }
 
@@ -351,3 +350,8 @@ footer {
   text-decoration: none;
   cursor: pointer;
 }
+
+a.icon {
+    display: none;
+}
+

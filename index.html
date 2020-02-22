@@ -10,13 +10,17 @@
     <script src="./src/scripts/app.js"></script> 
     <link rel="stylesheet" href="./src/css/style.css" />
     <link rel="stylesheet" href="./src/css/style_responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body ng-controller="appController">
     
     <header class="main-header">
+        <a href="javascript:void(0);" class="icon" ng-click="menuShowHide()">
+            <i class="fa fa-bars"></i>
+        </a>
         <nav class="main-nav">
-            <ul class="main-nav__items">
+            <ul class="main-nav__items" id="menu-items">
                 <li class="main-nav__item">
                     <img src="./src/img/icon_aboutme.png" class="icons">
                     <a href="#">ABOUT ME </a>

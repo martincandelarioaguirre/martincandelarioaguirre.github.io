@@ -1,9 +1,5 @@
 @media(max-width: 600px){
 
-    main {
-        padding-top: 200px;
-    }
-
     .column-profile {
         width: 100%;
     }
@@ -50,17 +46,85 @@
         /*margin-bottom: 20px;*/
     }
 
+    .main-header {
+        width: 100%;
+        height: 70px;
+        position: fixed;
+    }
+
+    main {
+        padding-top: 100px;
+    }
+
+    a.icon {
+        display: block;
+        float: left;
+    }
+
+     a.icon:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .main-header a {
+        float: right;
+        color: white;
+        padding: 23px;
+        width: 70px;
+        height: auto;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .main-nav {
+        background-color: #f1f1f1;
+    }
+
+    .main-nav__items {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: none;
+    }
+
+    .main-nav__item {
+        width: 100%;
+        display: inline-block;
+        margin: 0 0rem;
+        padding: 1rem 1rem 1rem 1rem;
+        border-bottom: 1px solid white;
+    }
+
+    .main-nav__item a {
+        width: 90%;
+        display: inline-block;
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        padding: 15px;
+        text-align: left;
+    }
+
+    .icons {
+        display: inline-block;
+        margin: 10px 10px 10px 10px;
+        padding: 0;
+    }
+
+    
+
 }
 
-@media(max-width: 880px){
+/*@media(max-width: 880px){
     main {
         padding-top: 150px;
     }
 
-    /* Create column to show jobs description */
+    
     .column-job {
         width: 99%;
-	    height: 300px; /* Should be removed. Only for demonstration */
+	    height: 300px;
         margin-top: 10px;
     }
-}
+}*/
