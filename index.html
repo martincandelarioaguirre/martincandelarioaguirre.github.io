@@ -179,18 +179,24 @@
                 </div>
                 <div class="body-social-network">
                     <div class="social-network">
-                        <a href="www.google.com">
+                        <a href="https://www.facebook.com" target="_blank">
                             <img src="./src/img/icon_facebook.png" class="icon-social">
                         </a>
                     </div>
                     <div class="social-network">
-                        <img src="./src/img/icon_instagram.png" class="icon-social">
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="./src/img/icon_instagram.png" class="icon-social">
+                        </a>
                     </div>
                     <div class="social-network">
-                        <img src="./src/img/icon_linkedin.png" class="icon-social">
+                        <a href="https://www.linkedin.com/in/martin-candelario-aguirre-9b769690/" target="_blank">
+                            <img src="./src/img/icon_linkedin.png" class="icon-social">
+                        </a>
                     </div>
                     <div class="social-network">
-                        <img src="./src/img/icon_email.png" class="icon-social">
+                        <a ng-click="showEmailModal()" class="cursor">
+                            <img src="./src/img/icon_email.png" class="icon-social">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -200,9 +206,16 @@
         <h1>hello</h1>
     </footer>
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
 
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" ng-click="closeModal()">&times;</span>
+            <p>EMAIL: {{personalInformation.Email}}</p>
+        </div>
 
-
+    </div>
 
 </body>
 </html>

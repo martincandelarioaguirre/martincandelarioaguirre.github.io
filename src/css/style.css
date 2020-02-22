@@ -265,10 +265,9 @@ main {
 
 
 .social-network {
-    width: 22%;
+    width: 20%;
     display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1% 2% 1% 2%;
     border-radius: 50%;
     box-shadow: 5px 10px #888888;
 }
@@ -281,6 +280,10 @@ main {
     margin-left: auto;
     margin-right: auto;
     
+}
+
+.cursor {
+    cursor: pointer;
 }
 
 footer {
@@ -308,183 +311,43 @@ footer {
 
 
 
+/* Modal to Show Email Info*/
 
-
-
-/** {
-    box-sizing: border-box;
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-body {
-    font-family: "Monserrat", sans-serif;
-    margin: 0;
-    background-color: aliceblue;
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 20px auto auto auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
 }
 
-
-fieldset {
-    border: 0;
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
-legend {
-    margin: 0; 
-    text-align: left;
-    border-style: none;
-    border-width: 0;
-    margin-bottom: 0;
-    padding: .1rem 1rem;
-    border: 1px solid black;
-    background: rgba(242,246,248,1);
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
-
-.main-header {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 0.5rem 0rem;
-    z-index: 1;
-    background-color: #005b96;
-    border-bottom-color: black;
-    border-bottom: 10px;
-}
-
-.main-header:after {
-    content:"";
-    background: -webkit-linear-gradient(left, rgba(92, 7, 52, 1) 0%, rgba(134, 29, 84, 1) 12%, rgba(255, 93, 177, 1) 47%, rgba(83, 0, 30, 1) 100%);
-    display: block;
-    height:5px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-}
-
-.main-nav {
-    display: inline-block;
-    text-align: center;
-    width:100%;
-}
-
-.main-nav__items {
-    margin: 1%;
-    padding: 0;
-    list-style: none;
-    float: right;
-}
-
-.main-nav__item {
-    display: inline-block;
-    margin: 0 1rem;
-}
-
-.main-nav__item a {
-    text-decoration: none;
-    color: #FFF;
-    font-weight: bold;
-    padding: 0.2rem 0;
-}
-
-.main-nav__item a:hover,
-.main-nav__item a:active {
-    color: #ccc;
-}
-
-
-.section-g {
-    background-color: #adcbe3;
-    text-align: center;
-    margin-top: 2.5rem;
-    box-shadow:  1rem .1rem 1rem .1rem rgba(0, 0, 0, .5);
-    width: 90%;
-    text-align: center;
-    margin-right: 5%;
-    margin-left: 5%;
-    line-height: 1.5;
-    border: 1px solid black;
-}
-
-p {
-    color: #005b96;
-    font-weight: bold;
-}
-
-.profile-section {
-    display: inline-block;
-    width: 50%;
-    vertical-align: middle;
-}
-
-.profile-description {
-    display: inline-block;
-    width: 40%;
-    vertical-align: top;
-    margin: auto;
-}
-
-.profile_pic {
-    border-radius: 50%;
-    width: 55%;
-    height: auto;
-    border: 2px solid;
-    box-shadow: 0rem 1rem 1rem .5rem rgba(0, 0, 0, .5);
-    margin-bottom: 20px;
-}
-
-.about {
-    padding-top: 5vh;
-    margin-top: 15vh;
-}
-
-.skills{
-
-}
-
-.contact {
-
-}
-
-footer {
-    width: 100%;
-    background-color: #03396c;
-    margin-top: 2rem;
-
-    color: #FFF;
-    text-align: center;
-    height: 100px;
-    padding-bottom: 3rem;
-}
-
-footer:before {
-    content: "";
-    background: -webkit-linear-gradient(left, rgba(92, 7, 52, 1) 0%, rgba(134, 29, 84, 1) 12%, rgba(255, 93, 177, 1) 47%, rgba(83, 0, 30, 1) 100%);
-    display: block;
-    height:5px;
-    width: 100%;
-    position: absolute;
-    border: 10px;
-}
-
-a {
-    text-decoration: none;
-    color: #FFF;
-    font-weight: bold;
-}
-
-
-.work {
-  
-}
-
-.title-section {
-    text-align: left !important;
-    padding-left: 20px;
-    margin: 0;
-    text-shadow: 2px 2px 2px grey;
-}
-
-.subtitle-section {
-    text-align: left;
-    padding-left: 20px;
-    margin: 0;
-}
-*/
