@@ -40,14 +40,14 @@
 
     .social-network {
         width: 100%;
-        margin: 10px 10px 10px 10px;
+        margin: 10% 25% 10% 25%;
         border-radius: 50%;
         box-shadow: 5px 10px #888888;
     }
 
     .social-network {
         width: 50%;
-        margin-bottom: 20px;
+        /*margin-bottom: 20px;*/
     }
 
 }
