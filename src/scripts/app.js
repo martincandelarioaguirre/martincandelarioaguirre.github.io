@@ -19,7 +19,6 @@ app.controller("appController", ['$scope',
             Email: "m.c.a._92@hotmail.com",
             Passport: "Yes",
             Resume: "Hello, "
-            //Resume: "I am a highly competent mobile application software developer with eight years’ experience developing a wide range of tools for both iOS and Android for a range of clients. I have proven expertise in building sports betting and gambling apps. I understand the mobile app project     lifecycle in depth and am very capable at all aspects of development from project planning to requirements gathering through to writing and testing code, creating documentation and support. I am currently seeking long-term contract positions which will allow me to further improve my     project management skills."
         }
 
         $scope.jobs = [
@@ -89,7 +88,6 @@ app.controller("appController", ['$scope',
 
         $scope.calculateExperience = function(startDate) {
             var difdt = new Date(new Date() - startDate);
-
             return((difdt.toISOString().slice(0, 4) - 1970) + " Years " + (difdt.getMonth()+1) + " Months ");
         }
 
@@ -106,17 +104,18 @@ app.controller("appController", ['$scope',
 
         $scope.menuShowHide = function() {
             var menu = document.getElementById("menu-items");
-            var hasProperty = menu.style.display;
+            var hasClass = menu.className;
 
-            if (hasProperty == "" || hasProperty == "none")
-            {
-                menu.style.display = "block";
+            if (hasClass == "main-nav__items-visible") {
+                menu.className = "main-nav__items";
+            } else {
+                menu.className = "main-nav__items-visible";
             }
-            else 
-            {
-                menu.style.display = "none";
-            }
+        }
 
+        $scope.moveToElement = function(element) {
+             var elmnt = document.getElementById(element);
+            elmnt.scrollIntoView({behavior: "smooth", inline: "nearest"});
         }
 
     }

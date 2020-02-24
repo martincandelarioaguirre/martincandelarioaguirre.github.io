@@ -21,7 +21,7 @@
         </a>
         <nav class="main-nav">
             <ul class="main-nav__items" id="menu-items">
-                <li class="main-nav__item">
+                <li class="main-nav__item" ng-click="moveToElement('profile-details')">
                     <img src="./src/img/icon_aboutme.png" class="icons">
                     <a href="#">ABOUT ME </a>
                 </li>
@@ -29,7 +29,7 @@
                     <img src="./src/img/icon_cv.png" class="icons">
                     <a href="#">RESUMEN</a>
                 </li>
-                <li class="main-nav__item">
+                <li class="main-nav__item" ng-click="moveToElement('jobs-section')">
                     <img src="./src/img/icon_projects.png" class="icons">
                     <a href="#">PORTFOLIO</a>
                 </li>
@@ -41,7 +41,7 @@
                     <img src="./src/img/icon_school.png" class="icons">
                     <a href="#">STUDIES</a>
                 </li>
-                <li class="main-nav__item">
+                <li class="main-nav__item" ng-click="moveToElement('social-networks-section')">
                     <img src="./src/img/icon_contactme.png" class="icons">
                     <a href="#">CONTACT ME</a>
                 </li>
@@ -49,7 +49,7 @@
         </nav>
     </header>
     <main>
-        <section class="row">
+        <section class="row" id="profile-details">
             <div class="column-profile">
                 <div class="header-title-box">
                     <h3 class="header-title">PROFESSIONAL DETAILS</h3>
@@ -82,7 +82,7 @@
                     </div>
                 </div>
             </div>
-            <div class="column-profile-details">
+            <div class="column-profile-details" >
                 <div class="header-title-box"> 
                     <h3 class="titles-box">ABOUT ME</h3>
                 </div>
@@ -160,7 +160,7 @@
                 </div>
             </div>
         </section>
-        <article class="row" ng-repeat="job in jobs">
+        <article class="row" ng-repeat="job in jobs" id="jobs-section">
             <div class="column-job">
                 <div class="header-job">
                     <h3>{{job.Profile}}</h3>
@@ -176,7 +176,7 @@
                 </div>
             </div>
         </article>
-        <article class="row">
+        <article class="row" id="social-networks-section">
             <div class="column-social-networks">
                 <div class="header-title-box">
                     <h3 class="header-title">SOCIAL NETWORKS</h3>
